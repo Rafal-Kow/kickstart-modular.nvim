@@ -46,6 +46,9 @@ return {
         nvimtree = true,
         treesitter = true,
         notify = false,
+        mason = true,
+        which_key = true,
+        neotest = true,
         mini = {
           enabled = true,
           indentscope_color = '',
