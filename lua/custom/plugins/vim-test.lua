@@ -10,5 +10,5 @@ return {
   vim.keymap.set('n', '<leader>tl', ':TestLast<CR>'),
   vim.keymap.set('n', '<leader>tv', ':TestVisit<CR>'),
 
-  --  vim.cmd "let test#strategy = 'vimux'",
+  vim.cmd "let test#strategy = 'vimux'",
 }
