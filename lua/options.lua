@@ -23,6 +23,12 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
+-- enable virtual edit in visual block mode
+vim.opt.virtualedit = 'block'
+
+-- disable line break
+vim.opt.wrap = false
+
 -- Enable break indent
 vim.opt.breakindent = true
 
@@ -65,9 +71,11 @@ vim.opt.expandtab = true
 -- Set the indentation width
 vim.opt.tabstop = 2
 -- Set auto indentation width
-vim.opt.softtabstop = 0
+vim.opt.softtabstop = 2
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 999
+
+vim.opt.termguicolors = true
 
 -- vim: ts=2 sts=2 sw=2 et
