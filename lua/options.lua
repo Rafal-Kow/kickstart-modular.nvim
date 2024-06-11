@@ -29,6 +29,12 @@ vim.opt.virtualedit = 'block'
 -- disable line break
 vim.opt.wrap = false
 
+-- enable virtual edit in visual block mode
+vim.opt.virtualedit = 'block'
+
+-- disable line break
+vim.opt.wrap = false
+
 -- Enable break indent
 vim.opt.breakindent = true
 
