@@ -16,9 +16,24 @@ vim.opt.mouse = 'a'
 vim.opt.showmode = false
 
 -- Sync clipboard between OS and Neovim.
+--  Schedule the setting after `UiEnter` because it can increase startup-time.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)
+
+-- enable virtual edit in visual block mode
+vim.opt.virtualedit = 'block'
+
+-- disable line break
+vim.opt.wrap = false
+
+-- enable virtual edit in visual block mode
+vim.opt.virtualedit = 'block'
+
+-- disable line break
+vim.opt.wrap = false
 
 -- enable virtual edit in visual block mode
 vim.opt.virtualedit = 'block'
@@ -69,6 +84,14 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 -- Set auto indentation width
 vim.opt.softtabstop = 2
+
+-- Indentation settings
+-- Use space for indentation
+vim.opt.expandtab = true
+-- Set the indentation width
+vim.opt.tabstop = 2
+-- Set auto indentation width
+vim.opt.softtabstop = 0
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 999
